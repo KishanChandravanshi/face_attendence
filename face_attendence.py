@@ -21,8 +21,6 @@ for path in paths:
     image_names.append(temp.split(".")[0])
 
 
-print(image_names)
-
 # step-2 load the image and store their encodings into a list
 registered_encodings = []
 for path in paths:
@@ -141,6 +139,13 @@ attendance = list(set(face_enrolments))
 try:
     attendance.remove("unregistered_user")
     print(attendance)
+
+    f = open('present.txt', 'a')
+
+    for i in attendance:
+        f.write(i)
+    f.close()
+
 except:
     print("No records found")
 
