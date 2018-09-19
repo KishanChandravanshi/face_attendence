@@ -1,8 +1,36 @@
 # face_attendence
 
 ## Note: This model will work only on Ubuntu or MacOS platform
+
+<p>
+  
 <b> To know the requirements please see the requirements.txt file</b>
+
+ Make sure you have <b>opencv</b> and <b>face_recognition</b> installed on your system, if not follow the steps. To check open your terminal and type:
+ <br>
+ `$python3`
+ <br>
+ `$import cv2`
+ <br>
+ if you don't get any errors it means it's already installed, now check for face_recognition library
+ <br>
+ `$import face_recogniton`
+ <br>
+ again, no errors means already installed,
+ <br>
+ if you do get errors follow the following steps mentioned below:
+<br>
+
+ Open the terminal, and type the following commands
+ <br>
+ `$pip3 install opencv-python`
+ <br>
+ `$pip3 install face_recognition`
+ 
+</p>
+
 ### Step-1
+
 <p>
   <ul>
     <li> <i>First we will make encodings of all the images that have been registered before</i></li>
